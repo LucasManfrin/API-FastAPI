@@ -14,7 +14,7 @@ def pegar_sessao():
         session.close()
 
 def verificar_token(token: str = Depends(oauth2_schema), session: Session = Depends(pegar_sessao)):
-    # verificar se o token e valido e extrarir o ID do usuario do token
+    # verificar se o token e valido e extrair o ID do usuario do token
     try: 
         dic_info = jwt.decode(token, SECRET_KEY, ALOGORITHM)
         id_usuario = int(dic_info.get("sub"))
