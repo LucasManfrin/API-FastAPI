@@ -1,0 +1,33 @@
+# Ignorar ambiente virtual
+.venv/
+.env/
+venv/
+env/
+
+# Ignorar arquivos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar logs e arquivos temporários
+*.log
+*.tmp
+tmp/
+temp/
+
+# Ignorar arquivos do banco de dados (SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignorar pastas e arquivos de migração do Alembic (alembic/versions/)
+# Se quiser versionar as migrações, apague a linha abaixo
+alembic/versions/
+
+# Ignorar configurações da IDE (VS Code, etc.)
+.vscode/
+.idea/
+
+# Ignorar minhas anotacoes pessoais
+anotacoes.txt
